@@ -19,6 +19,8 @@
 		010 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110 /* ResultView.swift */; };
 		012 /* questions in Resources */ = {isa = PBXBuildFile; fileRef = 202 /* questions */; };
 		013 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 301 /* GoogleMobileAds */; };
+		1D84A8DC2EE7C5F700FD4174 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D84A8DB2EE7C5F700FD4174 /* Assets.xcassets */; };
+		1D84A8DE2EE7C8C500FD4174 /* LaunchBackground.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D84A8DD2EE7C8C500FD4174 /* LaunchBackground.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		108 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		109 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
 		110 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		1D84A8DB2EE7C5F700FD4174 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1D84A8DD2EE7C8C500FD4174 /* LaunchBackground.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchBackground.storyboard; sourceTree = "<group>"; };
 		201 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		202 /* questions */ = {isa = PBXFileReference; lastKnownFileType = folder; path = questions; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,6 +56,8 @@
 		000 = {
 			isa = PBXGroup;
 			children = (
+				1D84A8DD2EE7C8C500FD4174 /* LaunchBackground.storyboard */,
+				1D84A8DB2EE7C5F700FD4174 /* Assets.xcassets */,
 				300 /* Sources */,
 				400 /* Resources */,
 				500 /* Products */,
@@ -189,6 +195,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D84A8DE2EE7C8C500FD4174 /* LaunchBackground.storyboard in Resources */,
+				1D84A8DC2EE7C5F700FD4174 /* Assets.xcassets in Resources */,
 				012 /* questions in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

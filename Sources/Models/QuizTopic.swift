@@ -1,4 +1,5 @@
 import Foundation
+import SwiftUI
 
 enum QuizTopic: CaseIterable, Identifiable {
     case coordinator1
@@ -79,6 +80,55 @@ enum QuizTopic: CaseIterable, Identifiable {
             return true
         default:
             return false
+        }
+    }
+}
+
+enum QuizChapter: String, CaseIterable, Identifiable {
+    case general = "総合"
+    case elderly = "①高齢者障害者"
+    case health = "②健康・障害"
+    
+    var id: String { rawValue }
+    
+    var title: String { rawValue }
+    
+    var topics: [QuizTopic] {
+        switch self {
+        case .general:
+            return [
+                .coordinator1, .coordinator2,
+                .health1, .health2,
+                .counseling1, .counseling2,
+                .environment1, .environment2,
+                .welfare1, .welfare2
+            ]
+        case .elderly:
+            return [
+                .marubatsuElderlyDisabled,
+                .marubatsuElderlyDisabled2,
+                .marubatsuElderlyDisabled3,
+                .selectionElderlyDisabled
+            ]
+        case .health:
+            return [
+                .marubatsuHealthDisabilities,
+                .marubatsuHealthDisabilities2,
+                .marubatsuHealthDisabilities3,
+                .selectionHealthDisabilities,
+                .selectionHealthDisabilities2
+            ]
+        }
+    }
+    
+    var color: Color {
+        switch self {
+        case .general:
+            return Color(red: 0.2, green: 0.4, blue: 0.8) // Blue-ish
+        case .elderly:
+            return Color(red: 0.8, green: 0.4, blue: 0.2) // Orange-ish (Just to differentiate if needed, or stick to theme)
+        case .health:
+            return Color(red: 0.2, green: 0.6, blue: 0.4) // Green-ish
         }
     }
 }
