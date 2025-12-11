@@ -2,6 +2,11 @@ import SwiftUI
 
 struct QuizView: View {
     let topic: QuizTopic
+    var customQuestions: [Question]? = nil   // MARK: - Added for Wrong Question Mode
+    var titleOverride: String? = nil         // MARK: - Added for Wrong Question Mode
+    
+    // EnvironmentObject removed in favor of Singleton to prevent redraws
+    
     @State private var questions: [Question] = []
     @State private var currentQuestionIndex = 0
     @State private var selectedAnswer: Int? = nil
@@ -45,13 +50,22 @@ struct QuizView: View {
                             .padding(.horizontal)
                         
                         // 選択肢
-                        if topic.isMaruBatsu {
+                        // MARK: - Fixed for Wrong Question Mode (Check actual content for MaruBatsu)
+                        if questions[currentQuestionIndex].choices.contains("◯") {
                             HStack(spacing: 0) {
                                 // ◯ Button (Index 0)
                                 Button(action: {
                                     if selectedAnswer == nil {
                                         selectedAnswer = 0
                                         showExplanation = true
+                                        
+                                        if 0 == questions[currentQuestionIndex].answerIndex {
+                                            // Correct Answer: Remove from wrong list
+                                            WrongQuestionStore.shared.removeRecord(questionID: questions[currentQuestionIndex].id)
+                                        } else {
+                                            // Wrong Answer: Record it
+                                            WrongQuestionStore.shared.recordWrong(questionID: questions[currentQuestionIndex].id)
+                                        }
                                     }
                                 }) {
                                     ZStack {
@@ -72,6 +86,12 @@ struct QuizView: View {
                                     if selectedAnswer == nil {
                                         selectedAnswer = 1
                                         showExplanation = true
+                                        
+                                        if 1 == questions[currentQuestionIndex].answerIndex {
+                                            WrongQuestionStore.shared.removeRecord(questionID: questions[currentQuestionIndex].id)
+                                        } else {
+                                            WrongQuestionStore.shared.recordWrong(questionID: questions[currentQuestionIndex].id)
+                                        }
                                     }
                                 }) {
                                     ZStack {
@@ -103,6 +123,13 @@ struct QuizView: View {
                                         if selectedAnswer == nil {
                                             selectedAnswer = index
                                             showExplanation = true
+                                            
+                                            // MARK: - Added for Wrong Question Mode
+                                            if index == questions[currentQuestionIndex].answerIndex {
+                                                WrongQuestionStore.shared.removeRecord(questionID: questions[currentQuestionIndex].id)
+                                            } else {
+                                                WrongQuestionStore.shared.recordWrong(questionID: questions[currentQuestionIndex].id)
+                                            }
                                         }
                                     }) {
                                         HStack(alignment: .top, spacing: 12) {
@@ -145,11 +172,21 @@ struct QuizView: View {
                         if showExplanation {
                             VStack(spacing: 12) {
                                 // 正解・不正解表示
-                                Text(selectedAnswer == questions[currentQuestionIndex].answerIndex ? "正解！" : "不正解")
+                                let isCorrect = selectedAnswer == questions[currentQuestionIndex].answerIndex
+                                Text(isCorrect ? "正解！" : "不正解")
                                     .font(.title)
                                     .fontWeight(.bold)
-                                    .foregroundColor(selectedAnswer == questions[currentQuestionIndex].answerIndex ? .black : .red)
+                                    .foregroundColor(isCorrect ? .black : .red)
                                     .padding(.horizontal)
+                                    
+                                // MARK: - Added for Wrong Question Mode (Record Wrong Answer)
+                                if !isCorrect {
+                                    // Record wrong answer when explanation is shown (user made a choice)
+                                    // Use a Task or simple sync call since it's just modifying a store
+                                    // But we should ensure we only record it ONCE per question attempt.
+                                    // showExplanation is toggle, but body is recomputed. 
+                                    // Better to do this in the action that sets showExplanation = true.
+                                }
                                 
                                 // 解説
                                 Text(questions[currentQuestionIndex].explanation)
@@ -179,7 +216,7 @@ struct QuizView: View {
             }
         }
         .navigationBarTitleDisplayMode(.inline)
-        .navigationTitle(topic.title)
+        .navigationTitle(titleOverride ?? topic.title) // MARK: - Modified for Wrong Question Mode
         .navigationBarBackButtonHidden(true)
         .onAppear {
             loadQuestions()
@@ -194,7 +231,11 @@ struct QuizView: View {
     }
     
     private func loadQuestions() {
-        questions = QuizRepository.shared.loadQuestions(for: topic)
+        if let custom = customQuestions {
+             questions = custom
+        } else {
+             questions = QuizRepository.shared.loadQuestions(for: topic)
+        }
     }
     
     private func nextQuestion() {

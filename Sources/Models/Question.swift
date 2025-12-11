@@ -1,4 +1,5 @@
 import Foundation
+import SwiftUI
 
 struct Question: Codable, Identifiable {
     let id: String
@@ -68,7 +69,20 @@ struct Question: Codable, Identifiable {
             throw DecodingError.dataCorruptedError(forKey: .answerLabel, in: container, debugDescription: "answer_label \(decodedLabel) does not match answer_index \(answerIndexUnwrapped).")
         }
         
-        self.id = try container.decodeIfPresent(String.self, forKey: .id) ?? UUID().uuidString
+        if let id = try container.decodeIfPresent(String.self, forKey: .id) {
+            self.id = id
+        } else {
+            // Generate stable ID from question text using SHA256 (or simple generic hash if CryptoKit is overkill, but SHA256 is safe)
+            // Using a simple stable hash mechanism to avoid extra imports if possible, but let's just use the text itself as ID to be absolutely safe and simple for now?
+            // User requested ID. Long ID is okay.
+            // Actually, let's use a very simple custom hash to keep it short enough but stable.
+            // Or just Base64 of the text.
+            // Let's use simple string as ID if it's not too long, otherwise hash.
+            // Actually, let's just use the question text directly to match exact question.
+            // But wait, userDefaults limit? 20 questions stored is tiny.
+            // Let's use:
+             self.id = questionTextUnwrapped // Fallback to question text as ID
+        }
         self.category = try container.decodeIfPresent(String.self, forKey: .category) ?? "未分類"
         self.question = questionTextUnwrapped
         self.choices = choices
@@ -91,5 +105,71 @@ struct Question: Codable, Identifiable {
     private static func label(for index: Int) -> String {
         let labels = ["A", "B", "C", "D"]
         return labels.indices.contains(index) ? labels[index] : ""
+    }
+}
+
+// MARK: - WrongQuestionStore
+// Added here to ensure availability in the target scope without editing project.pbxproj directly.
+
+struct WrongQuestionRecord: Codable, Identifiable {
+    let id: String              // Question.id と対応 (Existing Question uses String id)
+    var lastWrongDate: Date     // 最後に間違えた日時
+    var timesWrong: Int         // 間違えた回数
+}
+
+final class WrongQuestionStore: ObservableObject {
+    static let shared = WrongQuestionStore()
+    @Published private(set) var records: [WrongQuestionRecord] = []
+    
+    private let storageKey = "WrongQuestionRecords"
+    
+    init() {
+        load()
+    }
+    
+    func recordWrong(questionID: String) {
+        if let index = records.firstIndex(where: { $0.id == questionID }) {
+            records[index].timesWrong += 1
+            records[index].lastWrongDate = Date()
+        } else {
+            let new = WrongQuestionRecord(id: questionID,
+                                          lastWrongDate: Date(),
+                                          timesWrong: 1)
+            records.append(new)
+        }
+        save()
+    }
+    
+    func removeRecord(questionID: String) {
+        if let index = records.firstIndex(where: { $0.id == questionID }) {
+            records.remove(at: index)
+            save()
+        }
+    }
+    
+    func clearAll() {
+        records.removeAll()
+        save()
+    }
+    
+    func sortedWrongQuestionIDs() -> [String] {
+        records
+            .sorted { $0.lastWrongDate < $1.lastWrongDate } // 古い順 (Oldest first)
+            .map { $0.id }
+    }
+    
+    private func load() {
+        let defaults = UserDefaults.standard
+        guard let data = defaults.data(forKey: storageKey) else { return }
+        if let decoded = try? JSONDecoder().decode([WrongQuestionRecord].self, from: data) {
+            records = decoded
+        }
+    }
+    
+    private func save() {
+        let defaults = UserDefaults.standard
+        if let data = try? JSONEncoder().encode(records) {
+            defaults.set(data, forKey: storageKey)
+        }
     }
 }
