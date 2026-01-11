@@ -63,6 +63,7 @@ struct HomeView: View {
                 AdsManager.shared.preload()
             }
         }
+        .navigationViewStyle(.stack)
     }
     
     private var titleSection: some View {
