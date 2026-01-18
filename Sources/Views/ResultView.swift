@@ -20,25 +20,25 @@ struct ResultView: View {
     private var resultComment: String {
         switch Int(scorePercentage) {
         case 0...10:
-            return "教本を読み返して、交通ルールの基礎から確認しましょう。"
+            return "まずは基本から。\n酸化性固体の共通性質を確実に覚えましょう。"
         case 11...20:
-            return "少しずつ理解できています。\n標識や標示の意味もしっかり覚えましょう。"
+            return "少しずつ慣れてきましょう。\n各物質の色や形状の違いを整理しましょう。"
         case 21...30:
-            return "あと一歩で半分です！\n旅客の安全を守る意識を持って学習しましょう。"
+            return "まだまだこれからです。\n指定数量の計算問題にも取り組みましょう。"
         case 31...40:
-            return "基礎知識はついてきました。\n二種免許特有の問題にも慣れていきましょう。"
+            return "基礎は掴めてきました。\n貯蔵・取扱いの基準を復習しましょう。"
         case 41...50:
-            return "折り返し地点です！\nお客様を乗せているつもりで、慎重に判断しましょう。"
+            return "折り返し地点です！\n物質ごとの消火方法の違いに注意しましょう。"
         case 51...60:
-            return "合格圏内が見えてきました！\n危険予測や応急救護の知識も深めましょう。"
+            return "合格圏内が見えてきました！\n法令の規制についても理解を深めましょう。"
         case 61...70:
-            return "良い調子です！\nひっかけ問題に注意して、正確な知識を定着させましょう。"
+            return "良い調子です！\n類似する物質の性質の違いを明確にしましょう。"
         case 71...80:
-            return "素晴らしい！プロのドライバーとしての自覚を持って、さらに磨きをかけましょう。"
+            return "素晴らしい！\n試験頻出の重要ポイントはほぼ押さえられています。"
         case 81...90:
-            return "非常に優秀です！\n本番でも冷静に判断できるよう、最終確認を行いましょう。"
+            return "非常に優秀です！\n間違えやすい例外規定などを最終確認しましょう。"
         default: // 91-100
-            return "完璧です！自信を持って本番に臨んでください。\nプロドライバーとして即戦力の知識レベルです。"
+            return "完璧です！自信を持って本番に臨んでください。\n乙1類試験合格レベルの実力があります。"
         }
     }
     
@@ -70,13 +70,9 @@ struct ResultView: View {
                 VStack(spacing: 24) {
                     // ヘッダー
                     VStack(spacing: 8) {
-                        Text("クイズ結果")
+                        Text("結果発表！")
                             .font(.system(size: 24, weight: .bold))
                             .foregroundColor(.black)
-                        
-                        Text(topic.title)
-                            .font(.system(size: 16))
-                            .foregroundColor(.gray)
                     }
                     .padding(.top, 20)
                     
@@ -182,9 +178,9 @@ struct ResultView: View {
                                 .foregroundColor(.black)
                             
                             VStack(alignment: .leading, spacing: 8) {
-                                NextStepRow(text: "旅客の安全を守る知識を身につける")
-                                NextStepRow(text: "応急救護や危険予測の理解を深める")
-                                NextStepRow(text: "毎日少しずつ問題を解いて慣れる")
+                                NextStepRow(text: "各物質の性質を正確に把握する")
+                                NextStepRow(text: "法令や規制の重要ポイントを整理する")
+                                NextStepRow(text: "毎日少しずつ問題を解いて記憶を定着")
                             }
                         }
                     }

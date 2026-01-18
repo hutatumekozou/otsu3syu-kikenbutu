@@ -39,6 +39,9 @@ struct HomeView: View {
                             
                             // MARK: - Added Wrong Questions Button (Isolated)
                             WrongQuestionsSection()
+                            
+                            // MARK: - Added Bookmark Questions Button
+                            BookmarkQuestionsSection()
 
                             ForEach(QuizChapter.allCases) { chapter in
                                 NavigationLink(destination: ChapterView(chapter: chapter)) {
@@ -68,12 +71,12 @@ struct HomeView: View {
     
     private var titleSection: some View {
         VStack(spacing: 8) {
-            Text("第二種免許")
+            Text("危険物取扱者")
                 .font(.largeTitle)
                 .fontWeight(.bold)
                 .foregroundColor(.black)
             
-            Text("試験対策")
+            Text("乙種第1類")
                 .font(.largeTitle)
                 .fontWeight(.bold)
                 .foregroundColor(.black)
@@ -176,6 +179,111 @@ struct WrongQuestionsSection: View {
             wrongQuestionsForQuiz = Array(ordered.prefix(20))
             showWrongQuiz = true
         }
+    }
+}
+
+// MARK: - Bookmark Questions Section
+struct BookmarkQuestionsSection: View {
+    @State private var showBookmarkQuiz = false
+    @State private var showNoBookmarks = false
+    @State private var bookmarkedQuestionsForQuiz: [Question] = []
+    
+    var body: some View {
+        Button(action: startBookmarkQuiz) {
+            Text("ブックマーク問題★")
+                .font(.system(size: 28, weight: .bold))
+                .foregroundColor(.white)
+                .frame(maxWidth: .infinity, minHeight: 120)
+                .background(Color.yellow) // Yellow/Gold for Star
+                .cornerRadius(20)
+                .shadow(color: .gray.opacity(0.3), radius: 6, x: 0, y: 4)
+        }
+        .buttonStyle(PlainButtonStyle())
+        .background(
+            Group {
+                NavigationLink(
+                    destination: QuizView(topic: .coordinator1, customQuestions: bookmarkedQuestionsForQuiz, titleOverride: "ブックマーク問題★"),
+                    isActive: $showBookmarkQuiz,
+                    label: { EmptyView() }
+                )
+                NavigationLink(
+                    destination: NoBookmarkQuestionsView(),
+                    isActive: $showNoBookmarks,
+                    label: { EmptyView() }
+                )
+            }
+        )
+    }
+    
+    private func startBookmarkQuiz() {
+        let bookmarkedIDs = BookmarkQuestionStore.shared.sortedBookmarkedQuestionIDs()
+        
+        if bookmarkedIDs.isEmpty {
+            showNoBookmarks = true
+            return
+        }
+        
+        // Load all questions to map IDs to Question objects
+        // Ideally this should be cached or more efficient, but reusing existing pattern for now
+        var allQuestions: [Question] = []
+        for topic in QuizTopic.allCases {
+            allQuestions.append(contentsOf: QuizRepository.shared.loadAllQuestions(for: topic))
+        }
+        
+        let questionMap = Dictionary(grouping: allQuestions, by: { $0.id }).compactMapValues { $0.first }
+        
+        var ordered: [Question] = []
+        for id in bookmarkedIDs {
+            if let q = questionMap[id] {
+                ordered.append(q)
+            }
+        }
+        
+        if ordered.isEmpty {
+            showNoBookmarks = true
+        } else {
+            bookmarkedQuestionsForQuiz = ordered
+            showBookmarkQuiz = true
+        }
+    }
+}
+
+struct NoBookmarkQuestionsView: View {
+    @Environment(\.presentationMode) var presentationMode
+    
+    var body: some View {
+        ZStack {
+            BackgroundView()
+            
+            VStack(spacing: 40) {
+                Text("ブックマークなし")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .foregroundColor(.black)
+                
+                Text("現在、ブックマークされた問題はありません。\n問題画面の☆ボタンでブックマークできます。")
+                    .font(.title3)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(.black)
+                    .padding()
+                    .background(Color.white.opacity(0.9))
+                    .cornerRadius(12)
+                    .padding(.horizontal)
+                
+                Button(action: {
+                    presentationMode.wrappedValue.dismiss()
+                }) {
+                    Text("トップに戻る")
+                        .font(.headline)
+                        .foregroundColor(.white)
+                        .frame(maxWidth: .infinity, minHeight: 60)
+                        .background(Color(red: 0.2, green: 0.4, blue: 0.8))
+                        .cornerRadius(15)
+                }
+                .padding(.horizontal, 40)
+            }
+        }
+        .navigationBarHidden(true)
     }
 }
 

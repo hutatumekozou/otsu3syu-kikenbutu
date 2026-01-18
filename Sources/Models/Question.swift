@@ -170,3 +170,51 @@ final class WrongQuestionStore: ObservableObject {
         }
     }
 }
+
+// MARK: - BookmarkQuestionStore
+// To manage bookmarked questions
+
+final class BookmarkQuestionStore: ObservableObject {
+    static let shared = BookmarkQuestionStore()
+    @Published private(set) var bookmarkedIDs: Set<String> = []
+    
+    private let storageKey = "BookmarkedQuestionIDs"
+    
+    init() {
+        load()
+    }
+    
+    func isBookmarked(questionID: String) -> Bool {
+        bookmarkedIDs.contains(questionID)
+    }
+    
+    func toggleBookmark(questionID: String) {
+        if bookmarkedIDs.contains(questionID) {
+            bookmarkedIDs.remove(questionID)
+        } else {
+            bookmarkedIDs.insert(questionID)
+        }
+        save()
+    }
+    
+    func sortedBookmarkedQuestionIDs() -> [String] {
+        // Return IDs sorted alphabetically to keep order consistent, or maybe better by insertion order if we tracked it?
+        // Set doesn't keep order. For simplicity, just sort by ID for stable output.
+        // User probably wants them in some order, but "Sorted by ID" is a reasonable default 
+        // given we don't have "date added" here (unless we change struct).
+        // Since the prompt just says "bookmarked questions", ID sort is fine.
+        return Array(bookmarkedIDs).sorted()
+    }
+    
+    private func load() {
+        let defaults = UserDefaults.standard
+        if let array = defaults.array(forKey: storageKey) as? [String] {
+            bookmarkedIDs = Set(array)
+        }
+    }
+    
+    private func save() {
+        let defaults = UserDefaults.standard
+        defaults.set(Array(bookmarkedIDs), forKey: storageKey)
+    }
+}

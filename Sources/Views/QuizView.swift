@@ -13,6 +13,20 @@ struct QuizView: View {
     @State private var showExplanation = false
     @State private var correctAnswers = 0
     @State private var navigateToResult = false
+    @State private var isBookmarked = false // Local state to reflect store
+    
+    private func toggleBookmark() {
+        let currentID = questions[currentQuestionIndex].id
+        BookmarkQuestionStore.shared.toggleBookmark(questionID: currentID)
+        isBookmarked = BookmarkQuestionStore.shared.isBookmarked(questionID: currentID)
+    }
+    
+    private func updateBookmarkState() {
+        if questions.indices.contains(currentQuestionIndex) {
+            let currentID = questions[currentQuestionIndex].id
+            isBookmarked = BookmarkQuestionStore.shared.isBookmarked(questionID: currentID)
+        }
+    }
     
     var body: some View {
         ZStack {
@@ -58,6 +72,16 @@ struct QuizView: View {
                 .font(.title2)
                 .fontWeight(.bold)
                 .foregroundColor(.black)
+            
+            // Bookmark Button
+            Button(action: toggleBookmark) {
+                Image(systemName: isBookmarked ? "star.fill" : "star")
+                    .resizable()
+                    .frame(width: 24, height: 24)
+                    .foregroundColor(isBookmarked ? .yellow : .gray)
+            }
+            .padding(.leading, 8)
+            
             Spacer()
             Text("\(currentQuestionIndex + 1) / \(questions.count)")
                 .font(.headline)
@@ -240,6 +264,7 @@ struct QuizView: View {
         } else {
              questions = QuizRepository.shared.loadQuestions(for: topic)
         }
+        updateBookmarkState()
     }
     
     private func nextQuestion() {
@@ -251,6 +276,7 @@ struct QuizView: View {
             currentQuestionIndex += 1
             selectedAnswer = nil
             showExplanation = false
+            updateBookmarkState()
         } else {
             navigateToResult = true
         }
