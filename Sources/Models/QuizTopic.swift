@@ -47,6 +47,18 @@ enum QuizTopic: CaseIterable, Identifiable {
     case class1Genre9
     case class1Genre10
     
+    // MARK: - Class 2 (乙2)
+    case class2Genre1
+    case class2Genre2
+    case class2Genre3
+    case class2Genre4
+    case class2Genre5
+    case class2Genre6
+    case class2Genre7
+    case class2Genre8
+    case class2Genre9
+    case class2Genre10
+    
     var id: String { category }
     
     var title: String { category }
@@ -94,6 +106,18 @@ enum QuizTopic: CaseIterable, Identifiable {
         case .class1Genre8: return "71-80 重クロム酸塩類"
         case .class1Genre9: return "81-90 ハロゲン酸塩類"
         case .class1Genre10: return "91-100 法令・実務"
+            
+        // Class 2
+        case .class2Genre1: return "1-10 危険物の性状"
+        case .class2Genre2: return "11-20 火災予防と貯蔵"
+        case .class2Genre3: return "21-30 消火方法"
+        case .class2Genre4: return "31-40 硫化リン"
+        case .class2Genre5: return "41-50 赤リン"
+        case .class2Genre6: return "51-60 硫黄"
+        case .class2Genre7: return "61-70 鉄粉"
+        case .class2Genre8: return "71-80 金属粉・マグネシウム"
+        case .class2Genre9: return "81-90 引火性固体"
+        case .class2Genre10: return "91-100 法令・指定数量"
         }
     }
     
@@ -140,6 +164,17 @@ enum QuizTopic: CaseIterable, Identifiable {
         case .class1Genre8: return "class1_genre8"
         case .class1Genre9: return "class1_genre9"
         case .class1Genre10: return "class1_genre10"
+            
+        case .class2Genre1: return "class2_genre1"
+        case .class2Genre2: return "class2_genre2"
+        case .class2Genre3: return "class2_genre3"
+        case .class2Genre4: return "class2_genre4"
+        case .class2Genre5: return "class2_genre5"
+        case .class2Genre6: return "class2_genre6"
+        case .class2Genre7: return "class2_genre7"
+        case .class2Genre8: return "class2_genre8"
+        case .class2Genre9: return "class2_genre9"
+        case .class2Genre10: return "class2_genre10"
         }
     }
     
@@ -166,6 +201,17 @@ enum QuizTopic: CaseIterable, Identifiable {
         case .class1Genre8: return 71
         case .class1Genre9: return 81
         case .class1Genre10: return 91
+            
+        case .class2Genre1: return 1
+        case .class2Genre2: return 11
+        case .class2Genre3: return 21
+        case .class2Genre4: return 31
+        case .class2Genre5: return 41
+        case .class2Genre6: return 51
+        case .class2Genre7: return 61
+        case .class2Genre8: return 71
+        case .class2Genre9: return 81
+        case .class2Genre10: return 91
         default: return 1
         }
     }
@@ -173,6 +219,7 @@ enum QuizTopic: CaseIterable, Identifiable {
 
 enum QuizChapter: String, CaseIterable, Identifiable {
     case class1 = "危険物乙1類"
+    case class2 = "危険物乙2類"
 
     
     var id: String { rawValue }
@@ -194,6 +241,19 @@ enum QuizChapter: String, CaseIterable, Identifiable {
                 .class1Genre9,
                 .class1Genre10
             ]
+        case .class2:
+            return [
+                .class2Genre1,
+                .class2Genre2,
+                .class2Genre3,
+                .class2Genre4,
+                .class2Genre5,
+                .class2Genre6,
+                .class2Genre7,
+                .class2Genre8,
+                .class2Genre9,
+                .class2Genre10
+            ]
         }
     }
     
@@ -201,6 +261,8 @@ enum QuizChapter: String, CaseIterable, Identifiable {
         switch self {
         case .class1:
             return Color(red: 0.9, green: 0.3, blue: 0.2) // Reddish for Hazardous
+        case .class2:
+            return Color(red: 0.2, green: 0.4, blue: 0.8) // Blue for Class 2
         }
     }
 }

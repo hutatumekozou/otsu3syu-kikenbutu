@@ -24,7 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		100 /* 危険物乙1種.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "危険物乙1種.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		100 /* 危険物乙2類.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "危険物乙2類.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		101 /* AppMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMain.swift; sourceTree = "<group>"; };
 		102 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		103 /* AdsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsManager.swift; sourceTree = "<group>"; };
@@ -125,7 +125,7 @@
 		500 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				100 /* 危険物乙1種.app */,
+				100 /* 危険物乙2類.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,9 +133,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		001T /* 危険物乙1種 */ = {
+		001T /* 危険物乙2類 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 002C /* Build configuration list for PBXNativeTarget "危険物乙1種" */;
+			buildConfigurationList = 002C /* Build configuration list for PBXNativeTarget "危険物乙2類" */;
 			buildPhases = (
 				001S /* Sources */,
 				001F /* Frameworks */,
@@ -145,12 +145,12 @@
 			);
 			dependencies = (
 			);
-			name = "危険物乙1種";
+			name = "危険物乙2類";
 			packageProductDependencies = (
 				301 /* GoogleMobileAds */,
 			);
 			productName = FK2QuizApp;
-			productReference = 100 /* 危険物乙1種.app */;
+			productReference = 100 /* 危険物乙2類.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -168,7 +168,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 001C /* Build configuration list for PBXProject "危険物乙1種" */;
+			buildConfigurationList = 001C /* Build configuration list for PBXProject "危険物乙2類" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = ja;
 			hasScannedForEncodings = 0;
@@ -185,7 +185,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				001T /* 危険物乙1種 */,
+				001T /* 危険物乙2類 */,
 			);
 		};
 /* End PBXProject section */
@@ -418,7 +418,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		001C /* Build configuration list for PBXProject "危険物乙1種" */ = {
+		001C /* Build configuration list for PBXProject "危険物乙2類" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				001D /* Debug */,
@@ -427,7 +427,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		002C /* Build configuration list for PBXNativeTarget "危険物乙1種" */ = {
+		002C /* Build configuration list for PBXNativeTarget "危険物乙2類" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				002D /* Debug */,
