@@ -76,7 +76,7 @@ struct HomeView: View {
                 .fontWeight(.bold)
                 .foregroundColor(.black)
             
-            Text("乙種第1類")
+            Text("乙種第2類")
                 .font(.largeTitle)
                 .fontWeight(.bold)
                 .foregroundColor(.black)
