@@ -227,6 +227,7 @@ enum QuizChapter: String, CaseIterable, Identifiable {
     var title: String { rawValue }
     
     var topics: [QuizTopic] {
+        switch self {
             /*
         case .class1:
             return [
