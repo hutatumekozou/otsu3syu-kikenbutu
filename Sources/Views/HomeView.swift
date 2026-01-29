@@ -13,6 +13,7 @@ struct BackgroundView: View {
                     .resizable()
                     .scaledToFill()
                     .frame(width: geo.size.width, height: geo.size.height, alignment: .center)
+                    .hueRotation(.degrees(-155)) // Blue(240) -> YellowGreen(85) = -155
             }
             .ignoresSafeArea()
         }
