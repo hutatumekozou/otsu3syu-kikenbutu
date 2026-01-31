@@ -67,6 +67,12 @@ enum QuizTopic: CaseIterable, Identifiable {
     case class3Genre5
     case class3Genre6
     case class3Genre7
+    case class3Genre8
+    case class3Genre9
+    case class3Genre10
+    case class3Genre11
+    case class3Genre12
+    case class3Genre13
     
     var id: String { category }
     
@@ -136,6 +142,12 @@ enum QuizTopic: CaseIterable, Identifiable {
         case .class3Genre5: return "56-60 黄リン（自然発火性）2"
         case .class3Genre6: return "61-80 金属炭化物・水素化物 1"
         case .class3Genre7: return "81-95 金属炭化物・水素化物 2"
+        case .class3Genre8: return "96-115 リン化物・特殊物質 1"
+        case .class3Genre9: return "116-120 リン化物・特殊物質 2"
+        case .class3Genre10: return "121-140 消火理論・保管規則 1"
+        case .class3Genre11: return "141-160 消火理論・保管規則 2"
+        case .class3Genre12: return "161-180 消火理論・保管規則 3"
+        case .class3Genre13: return "181-200 消火理論・保管規則 4"
         }
     }
     
@@ -201,6 +213,12 @@ enum QuizTopic: CaseIterable, Identifiable {
         case .class3Genre5: return "class3_g4_phosphorus_2"
         case .class3Genre6: return "class3_g5_carbides_1"
         case .class3Genre7: return "class3_g5_carbides_2"
+        case .class3Genre8: return "class3_g6_phosphides_1"
+        case .class3Genre9: return "class3_g6_phosphides_2"
+        case .class3Genre10: return "class3_g7_fire_theory_1"
+        case .class3Genre11: return "class3_g7_fire_theory_2"
+        case .class3Genre12: return "class3_g7_fire_theory_3"
+        case .class3Genre13: return "class3_g7_fire_theory_4"
         }
     }
     
@@ -246,6 +264,12 @@ enum QuizTopic: CaseIterable, Identifiable {
         case .class3Genre5: return 56
         case .class3Genre6: return 61
         case .class3Genre7: return 81
+        case .class3Genre8: return 96
+        case .class3Genre9: return 116
+        case .class3Genre10: return 121
+        case .class3Genre11: return 141
+        case .class3Genre12: return 161
+        case .class3Genre13: return 181
         default: return 1
         }
     }
@@ -299,7 +323,13 @@ enum QuizChapter: String, CaseIterable, Identifiable {
                 .class3Genre4,
                 .class3Genre5,
                 .class3Genre6,
-                .class3Genre7
+                .class3Genre7,
+                .class3Genre8,
+                .class3Genre9,
+                .class3Genre10,
+                .class3Genre11,
+                .class3Genre12,
+                .class3Genre13
             ]
         }
     }
