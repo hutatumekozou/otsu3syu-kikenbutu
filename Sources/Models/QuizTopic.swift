@@ -277,7 +277,7 @@ enum QuizTopic: CaseIterable, Identifiable {
 
 enum QuizChapter: String, CaseIterable, Identifiable {
     // case class1 = "危険物乙1類" // Removed per user request
-    case class2 = "危険物乙2類"
+    // case class2 = "危険物乙2類" // Removed per user request
     case class3 = "危険物乙3類"
 
     
@@ -302,6 +302,13 @@ enum QuizChapter: String, CaseIterable, Identifiable {
                 .class1Genre10
             ]
              */
+            /*
+        case .class1:
+            return [
+                .class1Genre1,
+                // ...
+            ]
+         
         case .class2:
             return [
                 .class2Genre1,
@@ -315,6 +322,7 @@ enum QuizChapter: String, CaseIterable, Identifiable {
                 .class2Genre9,
                 .class2Genre10
             ]
+             */
         case .class3:
             return [
                 .class3Genre1,
@@ -338,8 +346,8 @@ enum QuizChapter: String, CaseIterable, Identifiable {
         switch self {
         // case .class1:
             // return Color(red: 0.9, green: 0.3, blue: 0.2)
-        case .class2:
-            return Color(red: 0.2, green: 0.4, blue: 0.8) // Blue for Class 2
+        // case .class2:
+            // return Color(red: 0.2, green: 0.4, blue: 0.8) // Blue for Class 2
         case .class3:
             return Color(red: 0.2, green: 0.6, blue: 0.3) // Green for Class 3
         }

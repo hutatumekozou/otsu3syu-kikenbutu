@@ -13,7 +13,8 @@ struct BackgroundView: View {
                     .resizable()
                     .scaledToFill()
                     .frame(width: geo.size.width, height: geo.size.height, alignment: .center)
-                    .hueRotation(.degrees(-155)) // Blue(240) -> YellowGreen(85) = -155
+                    .saturation(0) // Remove original color
+                    .colorMultiply(Color(red: 188/255, green: 250/255, blue: 137/255)) // Apply Lime Green (#BCFA89)
             }
             .ignoresSafeArea()
         }
@@ -77,7 +78,7 @@ struct HomeView: View {
                 .fontWeight(.bold)
                 .foregroundColor(.black)
             
-            Text("乙種第2類")
+            Text("乙種第3類")
                 .font(.largeTitle)
                 .fontWeight(.bold)
                 .foregroundColor(.black)
