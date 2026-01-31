@@ -1,152 +1,152 @@
 [
-    {
-        "id": "class2_q51",
-        "category": "硫黄",
-        "question": "硫黄の燃焼時の炎の色と発生ガスの組み合わせとして、正しいものはどれか。",
-        "choices": [
-            "A. 赤色の炎 ── 一酸化炭素",
-            "B. 黄色の炎 ── 硫化水素",
-            "C. 青色の炎 ── 二酸化硫黄（亜硫酸ガス）",
-            "D. 白色の炎 ── 五酸化リン"
-        ],
-        "answer_index": 2,
-        "answer_label": "C",
-        "explanation": "\nCが正解。硫黄は青（青白）い炎で燃え、鼻を突く刺激臭の二酸化硫黄を発生する。",
-        "image_name": null
-    },
-    {
-        "id": "class2_q52",
-        "category": "硫黄",
-        "question": "硫黄の電気的性質として、正しいものはどれか。",
-        "choices": [
-            "A. 良導体であり、電気をよく通す。",
-            "B. 不良導体（絶縁体）であり、静電気が蓄積しやすい。",
-            "C. 半導体である。",
-            "D. 帯電防止効果がある。"
-        ],
-        "answer_index": 1,
-        "answer_label": "B",
-        "explanation": "\nBが正解。電気が逃げにくいため静電気が溜まりやすく、それが粉じん爆発の着火源となる。",
-        "image_name": null
-    },
-    {
-        "id": "class2_q53",
-        "category": "硫黄",
-        "question": "硫黄の同素体の中で、常温で最も安定な結晶形はどれか。",
-        "choices": [
-            "A. 斜方硫黄",
-            "B. 単斜硫黄",
-            "C. ゴム状硫黄",
-            "D. 無定形硫黄"
-        ],
-        "answer_index": 0,
-        "answer_label": "A",
-        "explanation": "\nAが正解。常温では斜方硫黄が安定形である。他の同素体も放置すると斜方硫黄に戻る。",
-        "image_name": null
-    },
-    {
-        "id": "class2_q54",
-        "category": "硫黄",
-        "question": "硫黄火災の消火において、留意すべき物理的現象はどれか。",
-        "choices": [
-            "A. 昇華して気体になり、一気に爆発する。",
-            "B. 融点が低いため、溶融して流動・拡散する恐れがある。",
-            "C. 水をかけると急激に膨張して容器を破壊する。",
-            "D. 燃焼すると金属のように硬化する。"
-        ],
-        "answer_index": 1,
-        "answer_label": "B",
-        "explanation": "\nBが正解。火災の熱で液体になり、流れ出して延焼を引き起こすリスクがある。",
-        "image_name": null
-    },
-    {
-        "id": "class2_q55",
-        "category": "硫黄",
-        "question": "純粋な硫黄の色として、正しいものはどれか。",
-        "choices": [
-            "A. 赤褐色",
-            "B. 淡黄色",
-            "C. 銀白色",
-            "D. 黒色"
-        ],
-        "answer_index": 1,
-        "answer_label": "B",
-        "explanation": "\nBが正解。硫黄は黄色い固体である。",
-        "image_name": null
-    },
-    {
-        "id": "class2_q56",
-        "category": "硫黄",
-        "question": "硫黄の溶解性について、正しい記述はどれか。",
-        "choices": [
-            "A. 水によく溶ける。",
-            "B. 水には溶けないが、二硫化炭素には溶ける。",
-            "C. 酸には溶けるが、二硫化炭素には溶けない。",
-            "D. どのような溶媒にも一切溶けない。"
-        ],
-        "answer_index": 1,
-        "answer_label": "B",
-        "explanation": "\nBが正解。水不溶、二硫化炭素可溶。この性質は赤リン（不溶）との対比で重要。",
-        "image_name": null
-    },
-    {
-        "id": "class2_q57",
-        "category": "硫黄",
-        "question": "硫黄粉末が浮遊している場所で警戒すべき現象はどれか。",
-        "choices": [
-            "A. 潮解",
-            "B. 粉じん爆発",
-            "C. 加水分解",
-            "D. 昇華"
-        ],
-        "answer_index": 1,
-        "answer_label": "B",
-        "explanation": "\nBが正解。可燃性微粉末と静電気の組み合わせは、粉じん爆発の典型的な発生条件である。",
-        "image_name": null
-    },
-    {
-        "id": "class2_q58",
-        "category": "硫黄",
-        "question": "硫黄の指定数量はいくつか。",
-        "choices": [
-            "A. 50kg",
-            "B. 100kg",
-            "C. 500kg",
-            "D. 1000kg"
-        ],
-        "answer_index": 1,
-        "answer_label": "B",
-        "explanation": "\nBが正解。硫黄は100kgである。",
-        "image_name": null
-    },
-    {
-        "id": "class2_q59",
-        "category": "硫黄",
-        "question": "硫黄を燃焼させたときに発生するガスの人体への影響として、適切なものはどれか。",
-        "choices": [
-            "A. 無害である。",
-            "B. 麻酔作用がある。",
-            "C. 腐卵臭があり、神経毒性がある。",
-            "D. 刺激臭があり、粘膜を刺激し、呼吸器に障害を与える。"
-        ],
-        "answer_index": 3,
-        "answer_label": "D",
-        "explanation": "\nDが正解。二酸化硫黄は強い刺激性を持ち、粘膜を痛める。",
-        "image_name": null
-    },
-    {
-        "id": "class2_q60",
-        "category": "硫黄",
-        "question": "硫黄の消火方法として、最も一般的かつ効果的なものはどれか。",
-        "choices": [
-            "A. 水による冷却消火",
-            "B. 乾燥砂による窒息消火のみ",
-            "C. 金属火災用消火剤の使用",
-            "D. ハロゲン化物消火剤による抑制消火"
-        ],
-        "answer_index": 0,
-        "answer_label": "A",
-        "explanation": "\nAが正解。水と反応しないため、大量の水で冷却するのが最善である。",
-        "image_name": null
-    }
+  {
+    "id": "class2_q51",
+    "category": "51-60 硫黄",
+    "question": "硫黄の燃焼時の炎の色と発生ガスの組み合わせとして、正しいものはどれか。",
+    "choices": [
+      "A. 赤色の炎 ── 一酸化炭素",
+      "B. 黄色の炎 ── 硫化水素",
+      "C. 青色の炎 ── 二酸化硫黄（亜硫酸ガス）",
+      "D. 白色の炎 ── 五酸化リン"
+    ],
+    "answer_index": 2,
+    "answer_label": "C",
+    "explanation": "\nCが正解。硫黄は青（青白）い炎で燃え、鼻を突く刺激臭の二酸化硫黄を発生する。",
+    "image_name": null
+  },
+  {
+    "id": "class2_q52",
+    "category": "51-60 硫黄",
+    "question": "硫黄の電気的性質として、正しいものはどれか。",
+    "choices": [
+      "A. 良導体であり、電気をよく通す。",
+      "B. 不良導体（絶縁体）であり、静電気が蓄積しやすい。",
+      "C. 半導体である。",
+      "D. 帯電防止効果がある。"
+    ],
+    "answer_index": 1,
+    "answer_label": "B",
+    "explanation": "\nBが正解。電気が逃げにくいため静電気が溜まりやすく、それが粉じん爆発の着火源となる。",
+    "image_name": null
+  },
+  {
+    "id": "class2_q53",
+    "category": "51-60 硫黄",
+    "question": "硫黄の同素体の中で、常温で最も安定な結晶形はどれか。",
+    "choices": [
+      "A. 斜方硫黄",
+      "B. 単斜硫黄",
+      "C. ゴム状硫黄",
+      "D. 無定形硫黄"
+    ],
+    "answer_index": 0,
+    "answer_label": "A",
+    "explanation": "\nAが正解。常温では斜方硫黄が安定形である。他の同素体も放置すると斜方硫黄に戻る。",
+    "image_name": null
+  },
+  {
+    "id": "class2_q54",
+    "category": "51-60 硫黄",
+    "question": "硫黄火災の消火において、留意すべき物理的現象はどれか。",
+    "choices": [
+      "A. 昇華して気体になり、一気に爆発する。",
+      "B. 融点が低いため、溶融して流動・拡散する恐れがある。",
+      "C. 水をかけると急激に膨張して容器を破壊する。",
+      "D. 燃焼すると金属のように硬化する。"
+    ],
+    "answer_index": 1,
+    "answer_label": "B",
+    "explanation": "\nBが正解。火災の熱で液体になり、流れ出して延焼を引き起こすリスクがある。",
+    "image_name": null
+  },
+  {
+    "id": "class2_q55",
+    "category": "51-60 硫黄",
+    "question": "純粋な硫黄の色として、正しいものはどれか。",
+    "choices": [
+      "A. 赤褐色",
+      "B. 淡黄色",
+      "C. 銀白色",
+      "D. 黒色"
+    ],
+    "answer_index": 1,
+    "answer_label": "B",
+    "explanation": "\nBが正解。硫黄は黄色い固体である。",
+    "image_name": null
+  },
+  {
+    "id": "class2_q56",
+    "category": "51-60 硫黄",
+    "question": "硫黄の溶解性について、正しい記述はどれか。",
+    "choices": [
+      "A. 水によく溶ける。",
+      "B. 水には溶けないが、二硫化炭素には溶ける。",
+      "C. 酸には溶けるが、二硫化炭素には溶けない。",
+      "D. どのような溶媒にも一切溶けない。"
+    ],
+    "answer_index": 1,
+    "answer_label": "B",
+    "explanation": "\nBが正解。水不溶、二硫化炭素可溶。この性質は赤リン（不溶）との対比で重要。",
+    "image_name": null
+  },
+  {
+    "id": "class2_q57",
+    "category": "51-60 硫黄",
+    "question": "硫黄粉末が浮遊している場所で警戒すべき現象はどれか。",
+    "choices": [
+      "A. 潮解",
+      "B. 粉じん爆発",
+      "C. 加水分解",
+      "D. 昇華"
+    ],
+    "answer_index": 1,
+    "answer_label": "B",
+    "explanation": "\nBが正解。可燃性微粉末と静電気の組み合わせは、粉じん爆発の典型的な発生条件である。",
+    "image_name": null
+  },
+  {
+    "id": "class2_q58",
+    "category": "51-60 硫黄",
+    "question": "硫黄の指定数量はいくつか。",
+    "choices": [
+      "A. 50kg",
+      "B. 100kg",
+      "C. 500kg",
+      "D. 1000kg"
+    ],
+    "answer_index": 1,
+    "answer_label": "B",
+    "explanation": "\nBが正解。硫黄は100kgである。",
+    "image_name": null
+  },
+  {
+    "id": "class2_q59",
+    "category": "51-60 硫黄",
+    "question": "硫黄を燃焼させたときに発生するガスの人体への影響として、適切なものはどれか。",
+    "choices": [
+      "A. 無害である。",
+      "B. 麻酔作用がある。",
+      "C. 腐卵臭があり、神経毒性がある。",
+      "D. 刺激臭があり、粘膜を刺激し、呼吸器に障害を与える。"
+    ],
+    "answer_index": 3,
+    "answer_label": "D",
+    "explanation": "\nDが正解。二酸化硫黄は強い刺激性を持ち、粘膜を痛める。",
+    "image_name": null
+  },
+  {
+    "id": "class2_q60",
+    "category": "51-60 硫黄",
+    "question": "硫黄の消火方法として、最も一般的かつ効果的なものはどれか。",
+    "choices": [
+      "A. 水による冷却消火",
+      "B. 乾燥砂による窒息消火のみ",
+      "C. 金属火災用消火剤の使用",
+      "D. ハロゲン化物消火剤による抑制消火"
+    ],
+    "answer_index": 0,
+    "answer_label": "A",
+    "explanation": "\nAが正解。水と反応しないため、大量の水で冷却するのが最善である。",
+    "image_name": null
+  }
 ]

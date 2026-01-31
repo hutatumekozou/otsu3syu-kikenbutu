@@ -1,152 +1,152 @@
 [
-    {
-        "id": "class2_q91",
-        "category": "法令・指定数量",
-        "question": "第2類危険物の指定数量の組み合わせとして、正しいものはどれか。",
-        "choices": [
-            "A. 硫黄：50kg",
-            "B. 赤リン：100kg",
-            "C. 鉄粉：100kg",
-            "D. 引火性固体：500kg"
-        ],
-        "answer_index": 1,
-        "answer_label": "B",
-        "explanation": "\nBが正解。赤リンは100kg。硫黄も100kg、鉄粉は500kg、引火性固体は1000kg。",
-        "image_name": null
-    },
-    {
-        "id": "class2_q92",
-        "category": "法令・指定数量",
-        "question": "第2類危険物の中に、「危険等級Ⅰ」に該当する物質はあるか。",
-        "choices": [
-            "A. ある",
-            "B. ない",
-            "C. 引火性固体のみⅠである",
-            "D. マグネシウムのみⅠである"
-        ],
-        "answer_index": 1,
-        "answer_label": "B",
-        "explanation": "\nBが正解。第2類には危険等級Ⅰ（最も危険）の区分はなく、ⅡまたはⅢのみである。",
-        "image_name": null
-    },
-    {
-        "id": "class2_q93",
-        "category": "法令・指定数量",
-        "question": "次のうち、危険等級が「Ⅲ」である物質はどれか。",
-        "choices": [
-            "A. 三硫化リン",
-            "B. 赤リン",
-            "C. 鉄粉",
-            "D. 硫黄"
-        ],
-        "answer_index": 2,
-        "answer_label": "C",
-        "explanation": "\nCが正解。鉄粉、Mg、引火性固体は等級Ⅲ（比較的リスクが低い区分）である。",
-        "image_name": null
-    },
-    {
-        "id": "class2_q94",
-        "category": "法令・指定数量",
-        "question": "赤リン200kgと鉄粉1000kgを同一の倉庫で貯蔵する場合、指定数量の何倍の危険物を貯蔵していることになるか。",
-        "choices": [
-            "A. 2倍",
-            "B. 3倍",
-            "C. 4倍",
-            "D. 5倍"
-        ],
-        "answer_index": 2,
-        "answer_label": "C",
-        "explanation": "\nCが正解。赤リン(200/100=2倍) + 鉄粉(1000/500=2倍) = 4倍。",
-        "image_name": null
-    },
-    {
-        "id": "class2_q95",
-        "category": "法令・指定数量",
-        "question": "第2類危険物の品名として、法令上明記されていないものはどれか。",
-        "choices": [
-            "A. 硫化リン",
-            "B. 黄リン",
-            "C. 引火性固体",
-            "D. 赤リン"
-        ],
-        "answer_index": 1,
-        "answer_label": "B",
-        "explanation": "\nBが正解。黄リンは第3類である。",
-        "image_name": null
-    },
-    {
-        "id": "class2_q96",
-        "category": "法令・指定数量",
-        "question": "硫黄の指定数量（100kg）は、第1類の塩素酸塩類（50kg）と比べてどうなっているか。",
-        "choices": [
-            "A. 少ない（厳しい）",
-            "B. 多い（緩い）",
-            "C. 同じ",
-            "D. 比較できない"
-        ],
-        "answer_index": 1,
-        "answer_label": "B",
-        "explanation": "\nBが正解。100kg > 50kg なので、指定数量の数値としては大きい（＝規制がかかるラインが高い＝比較的緩い）。",
-        "image_name": null
-    },
-    {
-        "id": "class2_q97",
-        "category": "法令・指定数量",
-        "question": "第2類危険物の運搬容器の外部表示において、誤っている組み合わせはどれか。",
-        "choices": [
-            "A. 硫化リン ── 火気注意",
-            "B. 引火性固体 ── 火気厳禁",
-            "C. 鉄粉 ── 火気注意・禁水",
-            "D. 赤リン ── 禁水"
-        ],
-        "answer_index": 3,
-        "answer_label": "D",
-        "explanation": "\nDが誤り。赤リンには禁水表示は不要である。",
-        "image_name": null
-    },
-    {
-        "id": "class2_q98",
-        "category": "法令・指定数量",
-        "question": "マグネシウムを400kg貯蔵する場合、指定数量の倍数はいくつか。",
-        "choices": [
-            "A. 0.8倍",
-            "B. 1.0倍",
-            "C. 1.25倍",
-            "D. 4.0倍"
-        ],
-        "answer_index": 0,
-        "answer_label": "A",
-        "explanation": "\nAが正解。400 ÷ 500 = 0.8倍。",
-        "image_name": null
-    },
-    {
-        "id": "class2_q99",
-        "category": "法令・指定数量",
-        "question": "第2類危険物のうち、指定数量が最も小さい（規制が厳しい）グループはどれか。",
-        "choices": [
-            "A. 鉄粉、マグネシウム",
-            "B. 引火性固体",
-            "C. 硫化リン、赤リン、硫黄",
-            "D. 全て同じ"
-        ],
-        "answer_index": 2,
-        "answer_label": "C",
-        "explanation": "\nCが正解。100kgグループが最も厳しい。",
-        "image_name": null
-    },
-    {
-        "id": "class2_q100",
-        "category": "法令・指定数量",
-        "question": "乙種第2類危険物取扱者が取り扱うことができる危険物の範囲はどれか。",
-        "choices": [
-            "A. 第2類危険物のみ",
-            "B. 第2類危険物と第4類危険物",
-            "C. 全ての類の危険物",
-            "D. 第2類危険物および指定可燃物"
-        ],
-        "answer_index": 0,
-        "answer_label": "A",
-        "explanation": "\nAが正解。免状の交付を受けた類のみ扱える。",
-        "image_name": null
-    }
+  {
+    "id": "class2_q91",
+    "category": "91-100 法令・指定数量",
+    "question": "第2類危険物の指定数量の組み合わせとして、正しいものはどれか。",
+    "choices": [
+      "A. 硫黄：50kg",
+      "B. 赤リン：100kg",
+      "C. 鉄粉：100kg",
+      "D. 引火性固体：500kg"
+    ],
+    "answer_index": 1,
+    "answer_label": "B",
+    "explanation": "\nBが正解。赤リンは100kg。硫黄も100kg、鉄粉は500kg、引火性固体は1000kg。",
+    "image_name": null
+  },
+  {
+    "id": "class2_q92",
+    "category": "91-100 法令・指定数量",
+    "question": "第2類危険物の中に、「危険等級Ⅰ」に該当する物質はあるか。",
+    "choices": [
+      "A. ある",
+      "B. ない",
+      "C. 引火性固体のみⅠである",
+      "D. マグネシウムのみⅠである"
+    ],
+    "answer_index": 1,
+    "answer_label": "B",
+    "explanation": "\nBが正解。第2類には危険等級Ⅰ（最も危険）の区分はなく、ⅡまたはⅢのみである。",
+    "image_name": null
+  },
+  {
+    "id": "class2_q93",
+    "category": "91-100 法令・指定数量",
+    "question": "次のうち、危険等級が「Ⅲ」である物質はどれか。",
+    "choices": [
+      "A. 三硫化リン",
+      "B. 赤リン",
+      "C. 鉄粉",
+      "D. 硫黄"
+    ],
+    "answer_index": 2,
+    "answer_label": "C",
+    "explanation": "\nCが正解。鉄粉、Mg、引火性固体は等級Ⅲ（比較的リスクが低い区分）である。",
+    "image_name": null
+  },
+  {
+    "id": "class2_q94",
+    "category": "91-100 法令・指定数量",
+    "question": "赤リン200kgと鉄粉1000kgを同一の倉庫で貯蔵する場合、指定数量の何倍の危険物を貯蔵していることになるか。",
+    "choices": [
+      "A. 2倍",
+      "B. 3倍",
+      "C. 4倍",
+      "D. 5倍"
+    ],
+    "answer_index": 2,
+    "answer_label": "C",
+    "explanation": "\nCが正解。赤リン(200/100=2倍) + 鉄粉(1000/500=2倍) = 4倍。",
+    "image_name": null
+  },
+  {
+    "id": "class2_q95",
+    "category": "91-100 法令・指定数量",
+    "question": "第2類危険物の品名として、法令上明記されていないものはどれか。",
+    "choices": [
+      "A. 硫化リン",
+      "B. 黄リン",
+      "C. 引火性固体",
+      "D. 赤リン"
+    ],
+    "answer_index": 1,
+    "answer_label": "B",
+    "explanation": "\nBが正解。黄リンは第3類である。",
+    "image_name": null
+  },
+  {
+    "id": "class2_q96",
+    "category": "91-100 法令・指定数量",
+    "question": "硫黄の指定数量（100kg）は、第1類の塩素酸塩類（50kg）と比べてどうなっているか。",
+    "choices": [
+      "A. 少ない（厳しい）",
+      "B. 多い（緩い）",
+      "C. 同じ",
+      "D. 比較できない"
+    ],
+    "answer_index": 1,
+    "answer_label": "B",
+    "explanation": "\nBが正解。100kg > 50kg なので、指定数量の数値としては大きい（＝規制がかかるラインが高い＝比較的緩い）。",
+    "image_name": null
+  },
+  {
+    "id": "class2_q97",
+    "category": "91-100 法令・指定数量",
+    "question": "第2類危険物の運搬容器の外部表示において、誤っている組み合わせはどれか。",
+    "choices": [
+      "A. 硫化リン ── 火気注意",
+      "B. 引火性固体 ── 火気厳禁",
+      "C. 鉄粉 ── 火気注意・禁水",
+      "D. 赤リン ── 禁水"
+    ],
+    "answer_index": 3,
+    "answer_label": "D",
+    "explanation": "\nDが誤り。赤リンには禁水表示は不要である。",
+    "image_name": null
+  },
+  {
+    "id": "class2_q98",
+    "category": "91-100 法令・指定数量",
+    "question": "マグネシウムを400kg貯蔵する場合、指定数量の倍数はいくつか。",
+    "choices": [
+      "A. 0.8倍",
+      "B. 1.0倍",
+      "C. 1.25倍",
+      "D. 4.0倍"
+    ],
+    "answer_index": 0,
+    "answer_label": "A",
+    "explanation": "\nAが正解。400 ÷ 500 = 0.8倍。",
+    "image_name": null
+  },
+  {
+    "id": "class2_q99",
+    "category": "91-100 法令・指定数量",
+    "question": "第2類危険物のうち、指定数量が最も小さい（規制が厳しい）グループはどれか。",
+    "choices": [
+      "A. 鉄粉、マグネシウム",
+      "B. 引火性固体",
+      "C. 硫化リン、赤リン、硫黄",
+      "D. 全て同じ"
+    ],
+    "answer_index": 2,
+    "answer_label": "C",
+    "explanation": "\nCが正解。100kgグループが最も厳しい。",
+    "image_name": null
+  },
+  {
+    "id": "class2_q100",
+    "category": "91-100 法令・指定数量",
+    "question": "乙種第2類危険物取扱者が取り扱うことができる危険物の範囲はどれか。",
+    "choices": [
+      "A. 第2類危険物のみ",
+      "B. 第2類危険物と第4類危険物",
+      "C. 全ての類の危険物",
+      "D. 第2類危険物および指定可燃物"
+    ],
+    "answer_index": 0,
+    "answer_label": "A",
+    "explanation": "\nAが正解。免状の交付を受けた類のみ扱える。",
+    "image_name": null
+  }
 ]

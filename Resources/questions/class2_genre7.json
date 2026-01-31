@@ -1,152 +1,152 @@
 [
-    {
-        "id": "class2_q61",
-        "category": "鉄粉",
-        "question": "消防法における「鉄粉」の定義として、除外されるもの（危険物でないもの）はどれか。",
-        "choices": [
-            "A. 極めて微細な鉄の粉。",
-            "B. 53μmの網ふるいを通過するものが50％未満のもの。",
-            "C. 防湿包装されていない鉄粉。",
-            "D. 酸化されやすい純鉄の粉。"
-        ],
-        "answer_index": 1,
-        "answer_label": "B",
-        "explanation": "\nBが正解。53μmのふるいを通る微粉が半分未満（つまり粗い粒が多い）場合は、危険性が低いため除外される。",
-        "image_name": null
-    },
-    {
-        "id": "class2_q62",
-        "category": "鉄粉",
-        "question": "鉄粉の火災に対して行ってはならない行為はどれか。",
-        "choices": [
-            "A. 乾燥砂をかける。",
-            "B. 金属火災用消火剤を使用する。",
-            "C. 水を放射する。",
-            "D. 容器を密閉して酸素を断つ。"
-        ],
-        "answer_index": 2,
-        "answer_label": "C",
-        "explanation": "\nCが正解（禁止）。水蒸気爆発や水素爆発を引き起こすため、注水は厳禁である。",
-        "image_name": null
-    },
-    {
-        "id": "class2_q63",
-        "category": "鉄粉",
-        "question": "鉄粉が酸と接触したときに発生するガスはどれか。",
-        "choices": [
-            "A. 酸素",
-            "B. 水素",
-            "C. 塩素",
-            "D. 二酸化炭素"
-        ],
-        "answer_index": 1,
-        "answer_label": "B",
-        "explanation": "\nBが正解。鉄は酸に溶けて水素を発生する。Fe + 2HCl → FeCl2 + H2。",
-        "image_name": null
-    },
-    {
-        "id": "class2_q64",
-        "category": "鉄粉",
-        "question": "鉄粉の貯蔵における注意事項として、最も適切なものはどれか。",
-        "choices": [
-            "A. 湿気を避け、酸類との接触を防ぐ。",
-            "B. 通気性を良くするため、湿った場所に置く。",
-            "C. 酸化を促すため、定期的に水を散布する。",
-            "D. 酸化剤と混合して保管する。"
-        ],
-        "answer_index": 0,
-        "answer_label": "A",
-        "explanation": "\nAが正解。錆びる（酸化）際の熱や、酸との反応による水素発生を防ぐため、乾燥・隔離が必要。",
-        "image_name": null
-    },
-    {
-        "id": "class2_q65",
-        "category": "鉄粉",
-        "question": "鉄粉の指定数量はいくつか。",
-        "choices": [
-            "A. 50kg",
-            "B. 100kg",
-            "C. 500kg",
-            "D. 1000kg"
-        ],
-        "answer_index": 2,
-        "answer_label": "C",
-        "explanation": "\nCが正解。鉄粉は危険等級Ⅲ、指定数量500kgである。",
-        "image_name": null
-    },
-    {
-        "id": "class2_q66",
-        "category": "鉄粉",
-        "question": "鉄粉の色と形状についての一般的な記述はどれか。",
-        "choices": [
-            "A. 赤色の液体",
-            "B. 銀白色または灰黒色の粉末",
-            "C. 黄色の結晶",
-            "D. 無色の気体"
-        ],
-        "answer_index": 1,
-        "answer_label": "B",
-        "explanation": "\nBが正解。鉄粉は通常、灰黒色の粉末として認識される。",
-        "image_name": null
-    },
-    {
-        "id": "class2_q67",
-        "category": "鉄粉",
-        "question": "油類が付着した鉄粉が危険である理由として、正しいものはどれか。",
-        "choices": [
-            "A. 油が凍結するため。",
-            "B. 酸化反応熱が蓄積され、自然発火する恐れがあるため。",
-            "C. 安全になるため。",
-            "D. 気化するため。"
-        ],
-        "answer_index": 1,
-        "answer_label": "B",
-        "explanation": "\nBが正解。切削くずの山などでよく起こる事故原因である。",
-        "image_name": null
-    },
-    {
-        "id": "class2_q68",
-        "category": "鉄粉",
-        "question": "鉄粉が空気中で加熱されたときの反応として、正しいものはどれか。",
-        "choices": [
-            "A. 融解するだけで燃えない。",
-            "B. 火花を発して燃焼し、酸化鉄となる。",
-            "C. 昇華する。",
-            "D. 窒素と反応する。"
-        ],
-        "answer_index": 1,
-        "answer_label": "B",
-        "explanation": "\nBが正解。スチールウール等の燃焼と同様、火花を散らして燃える。",
-        "image_name": null
-    },
-    {
-        "id": "class2_q69",
-        "category": "鉄粉",
-        "question": "鉄粉を保管する際、危険性を低減するために用いる保護液等は存在するか。",
-        "choices": [
-            "A. 水に浸すのが一番良い。",
-            "B. 酸に浸す。",
-            "C. 通常、液に浸すことはせず、乾燥状態で保管する。",
-            "D. ガソリンに浸す。"
-        ],
-        "answer_index": 2,
-        "answer_label": "C",
-        "explanation": "\nCが正解。第3類の黄リン（水中保存）やカリウム（石油中保存）と異なり、鉄粉は乾燥保存が基本である。",
-        "image_name": null
-    },
-    {
-        "id": "class2_q70",
-        "category": "鉄粉",
-        "question": "鉄粉の消火にハロゲン化物消火剤を使用する場合の懸念点はどれか。",
-        "choices": [
-            "A. 高温時に分解して有毒ガスを生じたり、効果が薄かったりする場合がある。",
-            "B. 鉄粉と反応して爆発する。",
-            "C. 冷却効果が高すぎる。",
-            "D. 特になく、推奨される。"
-        ],
-        "answer_index": 0,
-        "answer_label": "A",
-        "explanation": "\nAが正解。金属火災には、専用の粉末消火剤か乾燥砂が最も確実である。",
-        "image_name": null
-    }
+  {
+    "id": "class2_q61",
+    "category": "61-70 鉄粉",
+    "question": "消防法における「鉄粉」の定義として、除外されるもの（危険物でないもの）はどれか。",
+    "choices": [
+      "A. 極めて微細な鉄の粉。",
+      "B. 53μmの網ふるいを通過するものが50％未満のもの。",
+      "C. 防湿包装されていない鉄粉。",
+      "D. 酸化されやすい純鉄の粉。"
+    ],
+    "answer_index": 1,
+    "answer_label": "B",
+    "explanation": "\nBが正解。53μmのふるいを通る微粉が半分未満（つまり粗い粒が多い）場合は、危険性が低いため除外される。",
+    "image_name": null
+  },
+  {
+    "id": "class2_q62",
+    "category": "61-70 鉄粉",
+    "question": "鉄粉の火災に対して行ってはならない行為はどれか。",
+    "choices": [
+      "A. 乾燥砂をかける。",
+      "B. 金属火災用消火剤を使用する。",
+      "C. 水を放射する。",
+      "D. 容器を密閉して酸素を断つ。"
+    ],
+    "answer_index": 2,
+    "answer_label": "C",
+    "explanation": "\nCが正解（禁止）。水蒸気爆発や水素爆発を引き起こすため、注水は厳禁である。",
+    "image_name": null
+  },
+  {
+    "id": "class2_q63",
+    "category": "61-70 鉄粉",
+    "question": "鉄粉が酸と接触したときに発生するガスはどれか。",
+    "choices": [
+      "A. 酸素",
+      "B. 水素",
+      "C. 塩素",
+      "D. 二酸化炭素"
+    ],
+    "answer_index": 1,
+    "answer_label": "B",
+    "explanation": "\nBが正解。鉄は酸に溶けて水素を発生する。Fe + 2HCl → FeCl2 + H2。",
+    "image_name": null
+  },
+  {
+    "id": "class2_q64",
+    "category": "61-70 鉄粉",
+    "question": "鉄粉の貯蔵における注意事項として、最も適切なものはどれか。",
+    "choices": [
+      "A. 湿気を避け、酸類との接触を防ぐ。",
+      "B. 通気性を良くするため、湿った場所に置く。",
+      "C. 酸化を促すため、定期的に水を散布する。",
+      "D. 酸化剤と混合して保管する。"
+    ],
+    "answer_index": 0,
+    "answer_label": "A",
+    "explanation": "\nAが正解。錆びる（酸化）際の熱や、酸との反応による水素発生を防ぐため、乾燥・隔離が必要。",
+    "image_name": null
+  },
+  {
+    "id": "class2_q65",
+    "category": "61-70 鉄粉",
+    "question": "鉄粉の指定数量はいくつか。",
+    "choices": [
+      "A. 50kg",
+      "B. 100kg",
+      "C. 500kg",
+      "D. 1000kg"
+    ],
+    "answer_index": 2,
+    "answer_label": "C",
+    "explanation": "\nCが正解。鉄粉は危険等級Ⅲ、指定数量500kgである。",
+    "image_name": null
+  },
+  {
+    "id": "class2_q66",
+    "category": "61-70 鉄粉",
+    "question": "鉄粉の色と形状についての一般的な記述はどれか。",
+    "choices": [
+      "A. 赤色の液体",
+      "B. 銀白色または灰黒色の粉末",
+      "C. 黄色の結晶",
+      "D. 無色の気体"
+    ],
+    "answer_index": 1,
+    "answer_label": "B",
+    "explanation": "\nBが正解。鉄粉は通常、灰黒色の粉末として認識される。",
+    "image_name": null
+  },
+  {
+    "id": "class2_q67",
+    "category": "61-70 鉄粉",
+    "question": "油類が付着した鉄粉が危険である理由として、正しいものはどれか。",
+    "choices": [
+      "A. 油が凍結するため。",
+      "B. 酸化反応熱が蓄積され、自然発火する恐れがあるため。",
+      "C. 安全になるため。",
+      "D. 気化するため。"
+    ],
+    "answer_index": 1,
+    "answer_label": "B",
+    "explanation": "\nBが正解。切削くずの山などでよく起こる事故原因である。",
+    "image_name": null
+  },
+  {
+    "id": "class2_q68",
+    "category": "61-70 鉄粉",
+    "question": "鉄粉が空気中で加熱されたときの反応として、正しいものはどれか。",
+    "choices": [
+      "A. 融解するだけで燃えない。",
+      "B. 火花を発して燃焼し、酸化鉄となる。",
+      "C. 昇華する。",
+      "D. 窒素と反応する。"
+    ],
+    "answer_index": 1,
+    "answer_label": "B",
+    "explanation": "\nBが正解。スチールウール等の燃焼と同様、火花を散らして燃える。",
+    "image_name": null
+  },
+  {
+    "id": "class2_q69",
+    "category": "61-70 鉄粉",
+    "question": "鉄粉を保管する際、危険性を低減するために用いる保護液等は存在するか。",
+    "choices": [
+      "A. 水に浸すのが一番良い。",
+      "B. 酸に浸す。",
+      "C. 通常、液に浸すことはせず、乾燥状態で保管する。",
+      "D. ガソリンに浸す。"
+    ],
+    "answer_index": 2,
+    "answer_label": "C",
+    "explanation": "\nCが正解。第3類の黄リン（水中保存）やカリウム（石油中保存）と異なり、鉄粉は乾燥保存が基本である。",
+    "image_name": null
+  },
+  {
+    "id": "class2_q70",
+    "category": "61-70 鉄粉",
+    "question": "鉄粉の消火にハロゲン化物消火剤を使用する場合の懸念点はどれか。",
+    "choices": [
+      "A. 高温時に分解して有毒ガスを生じたり、効果が薄かったりする場合がある。",
+      "B. 鉄粉と反応して爆発する。",
+      "C. 冷却効果が高すぎる。",
+      "D. 特になく、推奨される。"
+    ],
+    "answer_index": 0,
+    "answer_label": "A",
+    "explanation": "\nAが正解。金属火災には、専用の粉末消火剤か乾燥砂が最も確実である。",
+    "image_name": null
+  }
 ]

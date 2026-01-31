@@ -1,152 +1,152 @@
 [
-    {
-        "id": "class2_q81",
-        "category": "引火性固体",
-        "question": "引火性固体の定義における「引火点」の基準はどれか。",
-        "choices": [
-            "A. 0℃未満",
-            "B. 20℃未満",
-            "C. 40℃未満",
-            "D. 100℃未満"
-        ],
-        "answer_index": 2,
-        "answer_label": "C",
-        "explanation": "\nCが正解。引火点40℃未満のもの（固形アルコール等）がこれに該当する。",
-        "image_name": null
-    },
-    {
-        "id": "class2_q82",
-        "category": "引火性固体",
-        "question": "引火性固体の具体例として、最も適切なものはどれか。",
-        "choices": [
-            "A. 木炭",
-            "B. 固形アルコール",
-            "C. プラスチック消しゴム",
-            "D. アスファルト"
-        ],
-        "answer_index": 1,
-        "answer_label": "B",
-        "explanation": "\nBが正解。固形アルコールはキャンプ等で使われる燃料であり、典型的な引火性固体である。",
-        "image_name": null
-    },
-    {
-        "id": "class2_q83",
-        "category": "引火性固体",
-        "question": "引火性固体の燃焼形態として、正しいものはどれか。",
-        "choices": [
-            "A. 表面燃焼",
-            "B. 蒸発燃焼",
-            "C. 内部燃焼",
-            "D. くん焼"
-        ],
-        "answer_index": 1,
-        "answer_label": "B",
-        "explanation": "\nBが正解。固体から発生した蒸気が燃える蒸発燃焼である。",
-        "image_name": null
-    },
-    {
-        "id": "class2_q84",
-        "category": "引火性固体",
-        "question": "引火性固体の消火方法として、誤っているものはどれか。",
-        "choices": [
-            "A. 泡消火剤を使用する。",
-            "B. 二酸化炭素消火剤を使用する。",
-            "C. 霧状の水を放射する。",
-            "D. 乾燥砂は効果がないので使用しない。"
-        ],
-        "answer_index": 3,
-        "answer_label": "D",
-        "explanation": "\nDが誤り。乾燥砂による窒息消火は有効である。注水も有効である点が金属粉等と異なる。",
-        "image_name": null
-    },
-    {
-        "id": "class2_q85",
-        "category": "引火性固体",
-        "question": "引火性固体の指定数量はいくつか。",
-        "choices": [
-            "A. 100kg",
-            "B. 500kg",
-            "C. 1000kg",
-            "D. 3000kg"
-        ],
-        "answer_index": 2,
-        "answer_label": "C",
-        "explanation": "\nCが正解。1000kgである。",
-        "image_name": null
-    },
-    {
-        "id": "class2_q86",
-        "category": "引火性固体",
-        "question": "引火性固体の貯蔵において特に注意すべき点はどれか。",
-        "choices": [
-            "A. 蒸気が発生しやすいため、火気を近づけない。",
-            "B. 酸化するため、水に浸して保存する。",
-            "C. 凍結を防ぐため、温める。",
-            "D. 乾燥すると爆発するため、加湿する。"
-        ],
-        "answer_index": 0,
-        "answer_label": "A",
-        "explanation": "\nAが正解。常温付近で引火する可能性があるため、火気厳禁である。",
-        "image_name": null
-    },
-    {
-        "id": "class2_q87",
-        "category": "引火性固体",
-        "question": "次のうち、引火性固体に含まれる可能性が高いものはどれか。",
-        "choices": [
-            "A. 引火点60℃の合成樹脂",
-            "B. 引火点−10℃のゴムのり",
-            "C. 引火点150℃の潤滑油グリース",
-            "D. 引火点のないセラミックス"
-        ],
-        "answer_index": 1,
-        "answer_label": "B",
-        "explanation": "\nBが正解。引火点が40℃未満であれば該当する。",
-        "image_name": null
-    },
-    {
-        "id": "class2_q88",
-        "category": "引火性固体",
-        "question": "引火性固体の容器に必要な表示はどれか。",
-        "choices": [
-            "A. 火気注意",
-            "B. 火気厳禁",
-            "C. 禁水",
-            "D. 衝撃注意"
-        ],
-        "answer_index": 1,
-        "answer_label": "B",
-        "explanation": "\nBが正解。引火リスクが高いため「火気厳禁」となる。",
-        "image_name": null
-    },
-    {
-        "id": "class2_q89",
-        "category": "引火性固体",
-        "question": "固形アルコールが燃焼しているときの特徴はどれか。",
-        "choices": [
-            "A. 青白い炎で見えにくい。",
-            "B. 黒煙を上げる。",
-            "C. 赤い炎を上げる。",
-            "D. 火花を散らす。"
-        ],
-        "answer_index": 0,
-        "answer_label": "A",
-        "explanation": "\nAが正解。アルコール類と同様、淡い炎で見えにくいため、火傷に注意が必要。",
-        "image_name": null
-    },
-    {
-        "id": "class2_q90",
-        "category": "引火性固体",
-        "question": "引火性固体と第4類危険物（引火性液体）の主な違いは何か。",
-        "choices": [
-            "A. 引火点の有無",
-            "B. 常温（20℃）における状態が固体か液体か",
-            "C. 燃焼の仕組み",
-            "D. 酸化剤との反応性"
-        ],
-        "answer_index": 1,
-        "answer_label": "B",
-        "explanation": "\nBが正解。状態（固体か液体か）で区分される。",
-        "image_name": null
-    }
+  {
+    "id": "class2_q81",
+    "category": "81-90 引火性固体",
+    "question": "引火性固体の定義における「引火点」の基準はどれか。",
+    "choices": [
+      "A. 0℃未満",
+      "B. 20℃未満",
+      "C. 40℃未満",
+      "D. 100℃未満"
+    ],
+    "answer_index": 2,
+    "answer_label": "C",
+    "explanation": "\nCが正解。引火点40℃未満のもの（固形アルコール等）がこれに該当する。",
+    "image_name": null
+  },
+  {
+    "id": "class2_q82",
+    "category": "81-90 引火性固体",
+    "question": "引火性固体の具体例として、最も適切なものはどれか。",
+    "choices": [
+      "A. 木炭",
+      "B. 固形アルコール",
+      "C. プラスチック消しゴム",
+      "D. アスファルト"
+    ],
+    "answer_index": 1,
+    "answer_label": "B",
+    "explanation": "\nBが正解。固形アルコールはキャンプ等で使われる燃料であり、典型的な引火性固体である。",
+    "image_name": null
+  },
+  {
+    "id": "class2_q83",
+    "category": "81-90 引火性固体",
+    "question": "引火性固体の燃焼形態として、正しいものはどれか。",
+    "choices": [
+      "A. 表面燃焼",
+      "B. 蒸発燃焼",
+      "C. 内部燃焼",
+      "D. くん焼"
+    ],
+    "answer_index": 1,
+    "answer_label": "B",
+    "explanation": "\nBが正解。固体から発生した蒸気が燃える蒸発燃焼である。",
+    "image_name": null
+  },
+  {
+    "id": "class2_q84",
+    "category": "81-90 引火性固体",
+    "question": "引火性固体の消火方法として、誤っているものはどれか。",
+    "choices": [
+      "A. 泡消火剤を使用する。",
+      "B. 二酸化炭素消火剤を使用する。",
+      "C. 霧状の水を放射する。",
+      "D. 乾燥砂は効果がないので使用しない。"
+    ],
+    "answer_index": 3,
+    "answer_label": "D",
+    "explanation": "\nDが誤り。乾燥砂による窒息消火は有効である。注水も有効である点が金属粉等と異なる。",
+    "image_name": null
+  },
+  {
+    "id": "class2_q85",
+    "category": "81-90 引火性固体",
+    "question": "引火性固体の指定数量はいくつか。",
+    "choices": [
+      "A. 100kg",
+      "B. 500kg",
+      "C. 1000kg",
+      "D. 3000kg"
+    ],
+    "answer_index": 2,
+    "answer_label": "C",
+    "explanation": "\nCが正解。1000kgである。",
+    "image_name": null
+  },
+  {
+    "id": "class2_q86",
+    "category": "81-90 引火性固体",
+    "question": "引火性固体の貯蔵において特に注意すべき点はどれか。",
+    "choices": [
+      "A. 蒸気が発生しやすいため、火気を近づけない。",
+      "B. 酸化するため、水に浸して保存する。",
+      "C. 凍結を防ぐため、温める。",
+      "D. 乾燥すると爆発するため、加湿する。"
+    ],
+    "answer_index": 0,
+    "answer_label": "A",
+    "explanation": "\nAが正解。常温付近で引火する可能性があるため、火気厳禁である。",
+    "image_name": null
+  },
+  {
+    "id": "class2_q87",
+    "category": "81-90 引火性固体",
+    "question": "次のうち、引火性固体に含まれる可能性が高いものはどれか。",
+    "choices": [
+      "A. 引火点60℃の合成樹脂",
+      "B. 引火点−10℃のゴムのり",
+      "C. 引火点150℃の潤滑油グリース",
+      "D. 引火点のないセラミックス"
+    ],
+    "answer_index": 1,
+    "answer_label": "B",
+    "explanation": "\nBが正解。引火点が40℃未満であれば該当する。",
+    "image_name": null
+  },
+  {
+    "id": "class2_q88",
+    "category": "81-90 引火性固体",
+    "question": "引火性固体の容器に必要な表示はどれか。",
+    "choices": [
+      "A. 火気注意",
+      "B. 火気厳禁",
+      "C. 禁水",
+      "D. 衝撃注意"
+    ],
+    "answer_index": 1,
+    "answer_label": "B",
+    "explanation": "\nBが正解。引火リスクが高いため「火気厳禁」となる。",
+    "image_name": null
+  },
+  {
+    "id": "class2_q89",
+    "category": "81-90 引火性固体",
+    "question": "固形アルコールが燃焼しているときの特徴はどれか。",
+    "choices": [
+      "A. 青白い炎で見えにくい。",
+      "B. 黒煙を上げる。",
+      "C. 赤い炎を上げる。",
+      "D. 火花を散らす。"
+    ],
+    "answer_index": 0,
+    "answer_label": "A",
+    "explanation": "\nAが正解。アルコール類と同様、淡い炎で見えにくいため、火傷に注意が必要。",
+    "image_name": null
+  },
+  {
+    "id": "class2_q90",
+    "category": "81-90 引火性固体",
+    "question": "引火性固体と第4類危険物（引火性液体）の主な違いは何か。",
+    "choices": [
+      "A. 引火点の有無",
+      "B. 常温（20℃）における状態が固体か液体か",
+      "C. 燃焼の仕組み",
+      "D. 酸化剤との反応性"
+    ],
+    "answer_index": 1,
+    "answer_label": "B",
+    "explanation": "\nBが正解。状態（固体か液体か）で区分される。",
+    "image_name": null
+  }
 ]

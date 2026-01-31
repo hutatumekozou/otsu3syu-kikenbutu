@@ -67,28 +67,59 @@ struct QuizView: View {
     }
 
     private var questionHeaderView: some View {
-        HStack {
-            Text("第\(topic.startQuestionNumber + currentQuestionIndex)問")
-                .font(.title2)
-                .fontWeight(.bold)
-                .foregroundColor(.black)
-            
-            // Bookmark Button
-            Button(action: toggleBookmark) {
-                Image(systemName: isBookmarked ? "star.fill" : "star")
-                    .resizable()
-                    .frame(width: 24, height: 24)
-                    .foregroundColor(isBookmarked ? .yellow : .gray)
-            }
-            .padding(.leading, 8)
-            
-            Spacer()
-            Text("\(currentQuestionIndex + 1) / \(questions.count)")
+        VStack(spacing: 8) {
+            // Genre Name
+            Text(questions[currentQuestionIndex].category)
                 .font(.headline)
-                .foregroundColor(.black)
+                .foregroundColor(.black.opacity(0.8))
+                .padding(.top, 10)
+            
+            HStack {
+                Text("第\(getDisplayQuestionNumber())問")
+                    .font(.title2)
+                    .fontWeight(.bold)
+                    .foregroundColor(.black)
+                
+                // Bookmark Button
+                Button(action: toggleBookmark) {
+                    Image(systemName: isBookmarked ? "star.fill" : "star")
+                        .resizable()
+                        .frame(width: 24, height: 24)
+                        .foregroundColor(isBookmarked ? .yellow : .gray)
+                }
+                .padding(.leading, 8)
+                
+                Spacer()
+                Text("\(currentQuestionIndex + 1) / \(questions.count)")
+                    .font(.headline)
+                    .foregroundColor(.black)
+            }
+            .padding(.horizontal)
         }
-        .padding(.horizontal)
-        .padding(.top, 20)
+    }
+    
+    private func getDisplayQuestionNumber() -> String {
+        // If not custom mode, use standard logic
+        if customQuestions == nil {
+            return "\(topic.startQuestionNumber + currentQuestionIndex)"
+        }
+        
+        // In custom mode, try to derive from ID
+        let id = questions[currentQuestionIndex].id
+        // Pattern: ...q{number} or just q{number}
+        // e.g., "q96", "class2_q11"
+        if let range = id.range(of: "q", options: .backwards) {
+             let suffix = id[range.upperBound...]
+             if let num = Int(suffix) {
+                 return "\(num)"
+             }
+        }
+        
+        // Fallback for basic questions or unknown formats
+        // Attempt to parse "basic_1_1" -> ?
+        // If fallback, maybe just return "-" or keep simple index?
+        // Let's return ID for debug or just simple sequence if parsing fails
+        return "?"
     }
     
     private var questionTextView: some View {
