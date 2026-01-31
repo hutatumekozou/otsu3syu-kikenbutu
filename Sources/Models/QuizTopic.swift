@@ -59,6 +59,15 @@ enum QuizTopic: CaseIterable, Identifiable {
     case class2Genre9
     case class2Genre10
     
+    // MARK: - Class 3 (乙3)
+    case class3Genre1
+    case class3Genre2
+    case class3Genre3
+    case class3Genre4
+    case class3Genre5
+    case class3Genre6
+    case class3Genre7
+    
     var id: String { category }
     
     var title: String { category }
@@ -118,6 +127,15 @@ enum QuizTopic: CaseIterable, Identifiable {
         case .class2Genre8: return "71-80 金属粉・マグネシウム"
         case .class2Genre9: return "81-90 引火性固体"
         case .class2Genre10: return "91-100 法令・指定数量"
+            
+        // Class 3
+        case .class3Genre1: return "1-10 乙3類総論・共通特性"
+        case .class3Genre2: return "11-25 アルカリ金属"
+        case .class3Genre3: return "26-35 アルカリ土類・有機金属"
+        case .class3Genre4: return "36-55 黄リン（自然発火性）1"
+        case .class3Genre5: return "56-60 黄リン（自然発火性）2"
+        case .class3Genre6: return "61-80 金属炭化物・水素化物 1"
+        case .class3Genre7: return "81-95 金属炭化物・水素化物 2"
         }
     }
     
@@ -175,6 +193,14 @@ enum QuizTopic: CaseIterable, Identifiable {
         case .class2Genre8: return "class2_genre8"
         case .class2Genre9: return "class2_genre9"
         case .class2Genre10: return "class2_genre10"
+            
+        case .class3Genre1: return "class3_g1_general"
+        case .class3Genre2: return "class3_g2_alkali_metals"
+        case .class3Genre3: return "class3_g3_earth_metals"
+        case .class3Genre4: return "class3_g4_phosphorus_1"
+        case .class3Genre5: return "class3_g4_phosphorus_2"
+        case .class3Genre6: return "class3_g5_carbides_1"
+        case .class3Genre7: return "class3_g5_carbides_2"
         }
     }
     
@@ -212,6 +238,14 @@ enum QuizTopic: CaseIterable, Identifiable {
         case .class2Genre8: return 71
         case .class2Genre9: return 81
         case .class2Genre10: return 91
+            
+        case .class3Genre1: return 1
+        case .class3Genre2: return 11
+        case .class3Genre3: return 26
+        case .class3Genre4: return 36
+        case .class3Genre5: return 56
+        case .class3Genre6: return 61
+        case .class3Genre7: return 81
         default: return 1
         }
     }
@@ -220,6 +254,7 @@ enum QuizTopic: CaseIterable, Identifiable {
 enum QuizChapter: String, CaseIterable, Identifiable {
     // case class1 = "危険物乙1類" // Removed per user request
     case class2 = "危険物乙2類"
+    case class3 = "危険物乙3類"
 
     
     var id: String { rawValue }
@@ -256,6 +291,16 @@ enum QuizChapter: String, CaseIterable, Identifiable {
                 .class2Genre9,
                 .class2Genre10
             ]
+        case .class3:
+            return [
+                .class3Genre1,
+                .class3Genre2,
+                .class3Genre3,
+                .class3Genre4,
+                .class3Genre5,
+                .class3Genre6,
+                .class3Genre7
+            ]
         }
     }
     
@@ -265,6 +310,8 @@ enum QuizChapter: String, CaseIterable, Identifiable {
             // return Color(red: 0.9, green: 0.3, blue: 0.2)
         case .class2:
             return Color(red: 0.2, green: 0.4, blue: 0.8) // Blue for Class 2
+        case .class3:
+            return Color(red: 0.2, green: 0.6, blue: 0.3) // Green for Class 3
         }
     }
 }
