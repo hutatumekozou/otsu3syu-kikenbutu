@@ -24,7 +24,7 @@ class AdsManager: NSObject, ObservableObject {
         #if DEBUG
         return "ca-app-pub-3940256099942544/4411468910" // テスト用
         #else
-        return "ca-app-pub-8365176591962448/6065328702" // 本番用
+        return "ca-app-pub-8365176591962448/8236507531" // 本番用
         #endif
     }
     
@@ -203,7 +203,7 @@ struct BannerView: UIViewRepresentable {
         #if DEBUG
         banner.adUnitID = "ca-app-pub-3940256099942544/2934735716" // AdMob Test ID
         #else
-        banner.adUnitID = "ca-app-pub-8365176591962448/7330308910" // Production ID
+        banner.adUnitID = "ca-app-pub-8365176591962448/3118303993" // Production ID
         #endif
         
         banner.load(GADRequest())

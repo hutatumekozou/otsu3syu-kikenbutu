@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>ja_JP</string>
 	<key>CFBundleDisplayName</key>
-	<string>危険物乙2類</string>
+	<string>危険物乙3類</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -21,7 +21,7 @@
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>GADApplicationIdentifier</key>
-	<string>ca-app-pub-8365176591962448~9628769819</string>
+	<string>ca-app-pub-8365176591962448~4723464476</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UILaunchScreen</key>
